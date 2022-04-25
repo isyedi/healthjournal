@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE110999280EA08D00F99B59 /* HealthJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE110998280EA08D00F99B59 /* HealthJournalApp.swift */; };
+		EE11099B280EA08D00F99B59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11099A280EA08D00F99B59 /* ContentView.swift */; };
+		EE11099D280EA08F00F99B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE11099C280EA08F00F99B59 /* Assets.xcassets */; };
+		EE1109A0280EA08F00F99B59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE11099F280EA08F00F99B59 /* Preview Assets.xcassets */; };
+		EE1109AA280EA6C200F99B59 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109A9280EA6C200F99B59 /* Journal.swift */; };
+		EE1109AC280EA97700F99B59 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109AB280EA97700F99B59 /* JournalView.swift */; };
+		EE1109B0280FF0EF00F99B59 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109AF280FF0EF00F99B59 /* LandingPage.swift */; };
+		EE1109B2280FF70B00F99B59 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109B1280FF70A00F99B59 /* QuoteView.swift */; };
+		EE1109B628165EF200F99B59 /* QuizPageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109B528165EF200F99B59 /* QuizPageApp.swift */; };
+		EE1109B828165F1100F99B59 /* SelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109B728165F1100F99B59 /* SelectionRow.swift */; };
+		EE1109BA28165F4100F99B59 /* SingleSelectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109B928165F4100F99B59 /* SingleSelectionListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE110995280EA08D00F99B59 /* HealthJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE110998280EA08D00F99B59 /* HealthJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthJournalApp.swift; sourceTree = "<group>"; };
+		EE11099A280EA08D00F99B59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE11099C280EA08F00F99B59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE11099F280EA08F00F99B59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE1109A9280EA6C200F99B59 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		EE1109AB280EA97700F99B59 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		EE1109AF280FF0EF00F99B59 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		EE1109B1280FF70A00F99B59 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		EE1109B528165EF200F99B59 /* QuizPageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPageApp.swift; sourceTree = "<group>"; };
+		EE1109B728165F1100F99B59 /* SelectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionRow.swift; sourceTree = "<group>"; };
+		EE1109B928165F4100F99B59 /* SingleSelectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE110992280EA08D00F99B59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE11098C280EA08D00F99B59 = {
+			isa = PBXGroup;
+			children = (
+				EE110997280EA08D00F99B59 /* HealthJournal */,
+				EE110996280EA08D00F99B59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE110996280EA08D00F99B59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE110995280EA08D00F99B59 /* HealthJournal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE110997280EA08D00F99B59 /* HealthJournal */ = {
+			isa = PBXGroup;
+			children = (
+				EE110998280EA08D00F99B59 /* HealthJournalApp.swift */,
+				EE1109A8280EA6AB00F99B59 /* ViewModels */,
+				EE1109A7280EA0A900F99B59 /* Models */,
+				EE1109A6280EA09800F99B59 /* Views */,
+				EE11099A280EA08D00F99B59 /* ContentView.swift */,
+				EE11099C280EA08F00F99B59 /* Assets.xcassets */,
+				EE11099E280EA08F00F99B59 /* Preview Content */,
+				EE1109B528165EF200F99B59 /* QuizPageApp.swift */,
+				EE1109B728165F1100F99B59 /* SelectionRow.swift */,
+				EE1109B928165F4100F99B59 /* SingleSelectionListView.swift */,
+			);
+			path = HealthJournal;
+			sourceTree = "<group>";
+		};
+		EE11099E280EA08F00F99B59 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE11099F280EA08F00F99B59 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE1109A6280EA09800F99B59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE1109AB280EA97700F99B59 /* JournalView.swift */,
+				EE1109AF280FF0EF00F99B59 /* LandingPage.swift */,
+				EE1109B1280FF70A00F99B59 /* QuoteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE1109A7280EA0A900F99B59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE1109A9280EA6C200F99B59 /* Journal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE1109A8280EA6AB00F99B59 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE110994280EA08D00F99B59 /* HealthJournal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE1109A3280EA08F00F99B59 /* Build configuration list for PBXNativeTarget "HealthJournal" */;
+			buildPhases = (
+				EE110991280EA08D00F99B59 /* Sources */,
+				EE110992280EA08D00F99B59 /* Frameworks */,
+				EE110993280EA08D00F99B59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthJournal;
+			productName = HealthJournal;
+			productReference = EE110995280EA08D00F99B59 /* HealthJournal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE11098D280EA08D00F99B59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					EE110994280EA08D00F99B59 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EE110990280EA08D00F99B59 /* Build configuration list for PBXProject "HealthJournal" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE11098C280EA08D00F99B59;
+			productRefGroup = EE110996280EA08D00F99B59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE110994280EA08D00F99B59 /* HealthJournal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE110993280EA08D00F99B59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1109A0280EA08F00F99B59 /* Preview Assets.xcassets in Resources */,
+				EE11099D280EA08F00F99B59 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE110991280EA08D00F99B59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE11099B280EA08D00F99B59 /* ContentView.swift in Sources */,
+				EE1109BA28165F4100F99B59 /* SingleSelectionListView.swift in Sources */,
+				EE1109B628165EF200F99B59 /* QuizPageApp.swift in Sources */,
+				EE1109B2280FF70B00F99B59 /* QuoteView.swift in Sources */,
+				EE1109B828165F1100F99B59 /* SelectionRow.swift in Sources */,
+				EE1109B0280FF0EF00F99B59 /* LandingPage.swift in Sources */,
+				EE110999280EA08D00F99B59 /* HealthJournalApp.swift in Sources */,
+				EE1109AC280EA97700F99B59 /* JournalView.swift in Sources */,
+				EE1109AA280EA6C200F99B59 /* Journal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EE1109A1280EA08F00F99B59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE1109A2280EA08F00F99B59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE1109A4280EA08F00F99B59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HealthJournal/Preview Content\"";
+				DEVELOPMENT_TEAM = SQ29Q6X6KN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irfan.HealthJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE1109A5280EA08F00F99B59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HealthJournal/Preview Content\"";
+				DEVELOPMENT_TEAM = SQ29Q6X6KN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irfan.HealthJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE110990280EA08D00F99B59 /* Build configuration list for PBXProject "HealthJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE1109A1280EA08F00F99B59 /* Debug */,
+				EE1109A2280EA08F00F99B59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE1109A3280EA08F00F99B59 /* Build configuration list for PBXNativeTarget "HealthJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE1109A4280EA08F00F99B59 /* Debug */,
+				EE1109A5280EA08F00F99B59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE11098D280EA08D00F99B59 /* Project object */;
+}
