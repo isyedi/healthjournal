@@ -13,11 +13,13 @@ struct Entry : Identifiable {
     var id = UUID().uuidString
     var title : String
     var text : String
-    var month: String
+    var month : String
+    var todays : Bool = false
+    var date : String = "default"
 }
 
 var Entries = [
-    Entry(title: "Test1", text:"hey", month: "January"),
+    Entry(title: "What should I do right now?", text:"This is my first entry, I am not sure how to use this app", month: "January", todays: true),
     Entry(title: "Test2", text:"hey2", month: "January"),
     Entry(title: "Test3", text:"hey3", month: "March"),
     Entry(title: "Test4", text:"hey4", month: "March"),
@@ -35,6 +37,7 @@ struct MonthTab : Identifiable {
 }
 
 var MonthTabs = [
+    MonthTab(title: "Todays",  Entries: Entries.filter(){$0.todays == true}),
     MonthTab(title: "January", Entries: Entries.filter(){$0.month == "January"}),
     MonthTab(title: "February", Entries: Entries.filter(){$0.month == "February"}),
     MonthTab(title: "March", Entries: Entries.filter(){$0.month == "March"}),
