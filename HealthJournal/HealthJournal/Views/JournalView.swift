@@ -11,6 +11,7 @@ import SwiftUI
 struct JournalView: View {
     @State private var journalAnswer: String = "Write answer here..."
     @State private var journalQuestion: String = "What did you learn about yourself today?"
+    
     init() {
             UITextView.appearance().backgroundColor = .clear 
     }
@@ -44,10 +45,11 @@ struct JournalView: View {
                 .font(.body)
                 .foregroundColor(.white)
                 .frame(width: 320, height: 320)
-                //.background(Color.green)
+                .background(Color.green)
                 Spacer()
             NavigationLink(destination: QuoteView().navigationBarBackButtonHidden(true)){
                 Text("Save")
+                // SEND OVER QUESTION AND ANSWER AND ADD JOURNAL IN QUOTE VIEW
             }.padding(.bottom, 30)
             }.frame(width: 350, height: 670).padding(.top, 70)
             }

@@ -53,6 +53,14 @@ struct QuoteView: View {
     }
 }
 
+private func addCard() {
+//    let journal = Journal(question: question, answer: answer)
+    //journalListViewModel.add(journal)
+    //presentationMode.wrappedValue.dismiss()
+}
+
+
+
 struct QuoteView_Previews: PreviewProvider {
     static var previews: some View {
         Group {

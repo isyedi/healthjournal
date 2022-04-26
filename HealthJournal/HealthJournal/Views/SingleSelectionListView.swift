@@ -105,7 +105,7 @@ struct page2 : View {
 //                            Text("NEXT").fontWeight(.heavy)
 //                                .foregroundColor(Color.red)
 //                        }
-                        NavigationLink(destination: LandingPage()){
+                        NavigationLink(destination: JournalView()){
                             Text("NEXT").fontWeight(.heavy)
                                 .foregroundColor(Color.red)
                         }

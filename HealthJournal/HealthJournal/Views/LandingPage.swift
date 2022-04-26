@@ -18,10 +18,11 @@ struct LandingPage: View {
                 Text("Welcome to HealthJournal")
                     .font(.system(size: 45, weight: .bold, design: .serif))
                     .multilineTextAlignment(.center)
+                    .padding(.top, 50)
                 Spacer()
                 NavigationLink(destination: JournalView().navigationBarBackButtonHidden(true)){
                     Text("Write an Entry")
-                }
+                }.padding(.bottom, 150)
                 }
             }
             .navigationBarTitle(Text(""), displayMode: .inline)

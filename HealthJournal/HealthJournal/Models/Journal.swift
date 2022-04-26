@@ -6,9 +6,13 @@
 //
 
 import Foundation
-//import FirebaseFirestoreSwift
+import FirebaseFirestoreSwift
+import Combine
 
-struct Journal {
+struct Journal: Identifiable, Codable {
+  @DocumentID var id: String?
     var question: String
     var answer: String
+    var quote: String
+    var userID: String?
 }
