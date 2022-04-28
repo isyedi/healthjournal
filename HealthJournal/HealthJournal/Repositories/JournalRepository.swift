@@ -23,4 +23,24 @@ class JournalRepository: ObservableObject {
     }
   }
     
+    @Published var journals: [Journal] = []
+
+    init() {
+      get()
+    }
+
+    func get() {
+      store.collection(path)
+        .addSnapshotListener { querySnapshot, error in
+          if let error = error {
+            print("Error getting cards: \(error.localizedDescription)")
+            return
+          }
+
+            self.journals = querySnapshot?.documents.compactMap { document in
+            try? document.data(as: Journal.self)
+          } ?? []
+        }
+    }
+    
 }

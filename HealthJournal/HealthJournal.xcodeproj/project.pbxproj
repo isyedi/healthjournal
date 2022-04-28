@@ -15,10 +15,9 @@
 		EE1109AC280EA97700F99B59 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109AB280EA97700F99B59 /* JournalView.swift */; };
 		EE1109B0280FF0EF00F99B59 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109AF280FF0EF00F99B59 /* LandingPage.swift */; };
 		EE1109B2280FF70B00F99B59 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109B1280FF70A00F99B59 /* QuoteView.swift */; };
-		EE1109B628165EF200F99B59 /* QuizPageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109B528165EF200F99B59 /* QuizPageApp.swift */; };
 		EE1109B828165F1100F99B59 /* SelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109B728165F1100F99B59 /* SelectionRow.swift */; };
-		EE1109BA28165F4100F99B59 /* SingleSelectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109B928165F4100F99B59 /* SingleSelectionListView.swift */; };
-		EE1109BC2816690E00F99B59 /* JournalMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109BB2816690E00F99B59 /* JournalMenu.swift */; };
+		EE1109BA28165F4100F99B59 /* QuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109B928165F4100F99B59 /* QuizPage.swift */; };
+		EE1109BC2816690E00F99B59 /* JournalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109BB2816690E00F99B59 /* JournalListView.swift */; };
 		EE1109BE28166B5500F99B59 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109BD28166B5500F99B59 /* Tab.swift */; };
 		EE1109C028166CC600F99B59 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1109BF28166CC600F99B59 /* MainPage.swift */; };
 		EE522EA52817A65700126427 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EE522EA42817A65700126427 /* FirebaseAnalytics */; };
@@ -51,6 +50,7 @@
 		EE522EDB2817A65700126427 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = EE522EDA2817A65700126427 /* FirebaseStorageSwift-Beta */; };
 		EE522EDD2817A81600126427 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE522EDC2817A81600126427 /* GoogleService-Info.plist */; };
 		EE522EE02817BC0500126427 /* JournalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE522EDF2817BC0500126427 /* JournalListViewModel.swift */; };
+		EE522EE228193E5E00126427 /* JournalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE522EE128193E5E00126427 /* JournalViewModel.swift */; };
 		EEE8EDB8281784BE009ED204 /* JournalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8EDB7281784BE009ED204 /* JournalRepository.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,15 +64,15 @@
 		EE1109AB280EA97700F99B59 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		EE1109AF280FF0EF00F99B59 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		EE1109B1280FF70A00F99B59 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
-		EE1109B528165EF200F99B59 /* QuizPageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPageApp.swift; sourceTree = "<group>"; };
 		EE1109B728165F1100F99B59 /* SelectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionRow.swift; sourceTree = "<group>"; };
-		EE1109B928165F4100F99B59 /* SingleSelectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionListView.swift; sourceTree = "<group>"; };
-		EE1109BB2816690E00F99B59 /* JournalMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalMenu.swift; sourceTree = "<group>"; };
+		EE1109B928165F4100F99B59 /* QuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPage.swift; sourceTree = "<group>"; };
+		EE1109BB2816690E00F99B59 /* JournalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListView.swift; sourceTree = "<group>"; };
 		EE1109BD28166B5500F99B59 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		EE1109BF28166CC600F99B59 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		EE522EDC2817A81600126427 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE522EDE2817A81B00126427 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE522EDF2817BC0500126427 /* JournalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListViewModel.swift; sourceTree = "<group>"; };
+		EE522EE128193E5E00126427 /* JournalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewModel.swift; sourceTree = "<group>"; };
 		EEE8EDB7281784BE009ED204 /* JournalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,12 +161,11 @@
 		EE1109A6280EA09800F99B59 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EE1109B528165EF200F99B59 /* QuizPageApp.swift */,
-				EE1109B928165F4100F99B59 /* SingleSelectionListView.swift */,
-				EE1109AB280EA97700F99B59 /* JournalView.swift */,
 				EE1109AF280FF0EF00F99B59 /* LandingPage.swift */,
-				EE1109BB2816690E00F99B59 /* JournalMenu.swift */,
+				EE1109B928165F4100F99B59 /* QuizPage.swift */,
+				EE1109AB280EA97700F99B59 /* JournalView.swift */,
 				EE1109B1280FF70A00F99B59 /* QuoteView.swift */,
+				EE1109BB2816690E00F99B59 /* JournalListView.swift */,
 				EE1109BF28166CC600F99B59 /* MainPage.swift */,
 			);
 			path = Views;
@@ -184,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				EE522EDF2817BC0500126427 /* JournalListViewModel.swift */,
+				EE522EE128193E5E00126427 /* JournalViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -303,17 +303,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE11099B280EA08D00F99B59 /* ContentView.swift in Sources */,
-				EE1109BA28165F4100F99B59 /* SingleSelectionListView.swift in Sources */,
+				EE1109BA28165F4100F99B59 /* QuizPage.swift in Sources */,
 				EEE8EDB8281784BE009ED204 /* JournalRepository.swift in Sources */,
-				EE1109B628165EF200F99B59 /* QuizPageApp.swift in Sources */,
 				EE1109B2280FF70B00F99B59 /* QuoteView.swift in Sources */,
 				EE1109B828165F1100F99B59 /* SelectionRow.swift in Sources */,
 				EE1109BE28166B5500F99B59 /* Tab.swift in Sources */,
 				EE1109B0280FF0EF00F99B59 /* LandingPage.swift in Sources */,
-				EE1109BC2816690E00F99B59 /* JournalMenu.swift in Sources */,
+				EE1109BC2816690E00F99B59 /* JournalListView.swift in Sources */,
 				EE110999280EA08D00F99B59 /* HealthJournalApp.swift in Sources */,
 				EE1109AC280EA97700F99B59 /* JournalView.swift in Sources */,
 				EE1109AA280EA6C200F99B59 /* Journal.swift in Sources */,
+				EE522EE228193E5E00126427 /* JournalViewModel.swift in Sources */,
 				EE522EE02817BC0500126427 /* JournalListViewModel.swift in Sources */,
 				EE1109C028166CC600F99B59 /* MainPage.swift in Sources */,
 			);

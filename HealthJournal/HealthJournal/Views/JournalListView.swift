@@ -8,10 +8,11 @@
 import Foundation
 import SwiftUI
 
-struct JournalMenu: View {
+struct JournalListView: View {
     @State var currentMonth = ""
     var journals: [Journal] = []
     var body: some View {
+        NavigationView{
         VStack(spacing: 0){
             
             HStack(spacing: 0){
@@ -53,7 +54,9 @@ struct JournalMenu: View {
             }
             .padding([.horizontal, .top])
         }
-    
+    }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 }
 
@@ -81,7 +84,7 @@ struct CardView: View {
 
 struct JournalMenu_Previews: PreviewProvider {
     static var previews: some View {
-        JournalMenu()
+        JournalListView()
     }
 }
 

@@ -7,9 +7,9 @@
 
 import Foundation
 import SwiftUI
-struct SingleSelectionListView: View {
+struct QuizPage1: View {
     
-    var items = ["I am Feeling Ok", "I am Feeling Sad" , "I am Feeling Happy", "I am not Ok"]
+    var items = ["Excited", "Content" , "Tired", "Overwhelmed"]
 
     @State var selectedItem: String? = nil
 
@@ -38,11 +38,11 @@ struct SingleSelectionListView: View {
                         .padding(.bottom, 190)
                         Spacer()
                         
-                        Text("ONWARD!") .fontWeight(.heavy)
-                            .padding(.bottom, 20)
+                        //Text("ONWARD!") .fontWeight(.heavy)
+                            //.padding(.bottom, 20)
                         Spacer()
                         if (selectedItem != nil){
-                            NavigationLink(destination: page2(answerOne: selectedItem ?? "None")){
+                            NavigationLink(destination: QuizPage2(answerOne: selectedItem ?? "None")){
                                 Text("NEXT").fontWeight(.heavy)
                                     .foregroundColor(Color.red)
                             }
@@ -57,17 +57,17 @@ struct SingleSelectionListView: View {
     }
 }
 
-struct SingleSelectionListView_Previews: PreviewProvider {
+struct QuizPage1_Previews: PreviewProvider {
     static var previews: some View {
-        SingleSelectionListView()
+        QuizPage1()
     }
 }
 
-struct page2 : View {
+struct QuizPage2 : View {
     
     var answerOne: String
     
-    var items = ["Dog", "Cat" , "Horse", "Man"]
+    var items = ["Energetic", "Productive" , "Mindful", "Grateful"]
 
     @State var selectedItem: String? = nil
     
@@ -96,8 +96,8 @@ struct page2 : View {
                     .padding(.bottom, 190)
                     Spacer()
                     
-                    Text("ONWARD!") .fontWeight(.heavy)
-                        .padding(.bottom, 20)
+                    //Text("ONWARD!") .fontWeight(.heavy)
+                        //.padding(.bottom, 20)
                     Spacer()
                     
                     if (selectedItem != nil){
@@ -105,7 +105,7 @@ struct page2 : View {
 //                            Text("NEXT").fontWeight(.heavy)
 //                                .foregroundColor(Color.red)
 //                        }
-                        NavigationLink(destination: JournalView()){
+                        NavigationLink(destination: JournalView(quizOneAns: answerOne, quizTwoAns: selectedItem ?? "")){
                             Text("NEXT").fontWeight(.heavy)
                                 .foregroundColor(Color.red)
                         }
@@ -121,16 +121,16 @@ struct page2 : View {
     }
 }
 
-struct page3 : View {
-
-    var answerOne: String
-    var answerTwo: String
-
-    var body : some View{
-        Text("Answer One: " + answerOne)
-        Text("Answer Two: " + answerTwo)
-        Text("Hello this is Page 3").fontWeight(.heavy)
-            .padding(.bottom, 700)
-        .navigationBarBackButtonHidden(true)
-    }
-}
+//struct page3 : View {
+//
+//    var answerOne: String
+//    var answerTwo: String
+//
+//    var body : some View{
+//        Text("Answer One: " + answerOne)
+//        Text("Answer Two: " + answerTwo)
+//        Text("Hello this is Page 3").fontWeight(.heavy)
+//            .padding(.bottom, 700)
+//        .navigationBarBackButtonHidden(true)
+//    }
+//}
