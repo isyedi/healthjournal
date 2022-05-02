@@ -42,7 +42,7 @@ struct QuizPage1: View {
                             //.padding(.bottom, 20)
                         Spacer()
                         if (selectedItem != nil){
-                            NavigationLink(destination: QuizPage2(answerOne: selectedItem ?? "None")){
+                            NavigationLink(destination: QuizPage2(answerOne: selectedItem ?? "None").navigationBarBackButtonHidden(true).navigationBarHidden(true)){
                                 Text("NEXT").fontWeight(.heavy)
                                     .foregroundColor(Color.red)
                             }
@@ -77,8 +77,7 @@ struct QuizPage2 : View {
                 Color(red: 245.0/255, green: 241.0/255, blue: 225.0/255)
                     .edgesIgnoringSafeArea(.all)
                 VStack{
-                    Text("Question 1 Answer: " + answerOne)
-                    Text("2?").fontWeight(.heavy)
+                    Text("How Do You Want To Feel?").fontWeight(.heavy)
                         .padding(.top, 10)
                         .font(.system(size: 30))
 
@@ -105,7 +104,7 @@ struct QuizPage2 : View {
 //                            Text("NEXT").fontWeight(.heavy)
 //                                .foregroundColor(Color.red)
 //                        }
-                        NavigationLink(destination: JournalView(quizOneAns: answerOne, quizTwoAns: selectedItem ?? "")){
+                        NavigationLink(destination: JournalView(quizOneAns: answerOne, quizTwoAns: selectedItem ?? "").navigationBarBackButtonHidden(true).navigationBarHidden(true)){
                             Text("NEXT").fontWeight(.heavy)
                                 .foregroundColor(Color.red)
                         }

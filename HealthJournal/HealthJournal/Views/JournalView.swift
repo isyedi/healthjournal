@@ -64,7 +64,7 @@ struct JournalView: View {
                 .frame(width: 320, height: 330)
                 //.background(Color.red)
                 Spacer()
-                NavigationLink(destination: QuoteView(journalA: journalAnswer, journalQ: journalQuestion, indexOne: (quizOneAnswers.firstIndex(of: quizOneAns) ?? 0), indexTwo: (quizTwoAnswers.firstIndex(of: quizTwoAns) ?? 0), journalListViewModel:   JournalListViewModel()).navigationBarBackButtonHidden(true)){
+                NavigationLink(destination: QuoteView(journalA: journalAnswer, journalQ: journalQuestion, indexOne: (quizOneAnswers.firstIndex(of: quizOneAns) ?? 0), indexTwo: (quizTwoAnswers.firstIndex(of: quizTwoAns) ?? 0), journalListViewModel:   JournalListViewModel()).navigationBarBackButtonHidden(true).navigationBarHidden(true)){
                 Text("Save")
             }.padding(.bottom, 30)
             }.frame(width: 350, height: 670).padding(.top, 70)

@@ -13,6 +13,7 @@ struct HealthJournalApp: App {
     
     init(){
         FirebaseApp.configure()
+        AuthenticationService.signIn()
     }
     
     

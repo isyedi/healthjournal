@@ -20,7 +20,7 @@ struct LandingPage: View {
                     .multilineTextAlignment(.center)
                     .padding(.top, 50)
                 Spacer()
-                NavigationLink(destination: QuizPage1().navigationBarBackButtonHidden(true)){
+                    NavigationLink(destination: QuizPage1().navigationBarBackButtonHidden(true).navigationBarHidden(true)){
                     Text("Write an Entry")
                 }.padding(.bottom, 150)
                 }

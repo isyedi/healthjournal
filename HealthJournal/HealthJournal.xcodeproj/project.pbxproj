@@ -51,6 +51,8 @@
 		EE522EDD2817A81600126427 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE522EDC2817A81600126427 /* GoogleService-Info.plist */; };
 		EE522EE02817BC0500126427 /* JournalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE522EDF2817BC0500126427 /* JournalListViewModel.swift */; };
 		EE522EE228193E5E00126427 /* JournalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE522EE128193E5E00126427 /* JournalViewModel.swift */; };
+		EE522EE5281BD27400126427 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE522EE4281BD27400126427 /* AuthenticationService.swift */; };
+		EE522EE9281EBC8700126427 /* JournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE522EE8281EBC8700126427 /* JournalEntryView.swift */; };
 		EEE8EDB8281784BE009ED204 /* JournalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8EDB7281784BE009ED204 /* JournalRepository.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +75,8 @@
 		EE522EDE2817A81B00126427 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE522EDF2817BC0500126427 /* JournalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListViewModel.swift; sourceTree = "<group>"; };
 		EE522EE128193E5E00126427 /* JournalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewModel.swift; sourceTree = "<group>"; };
+		EE522EE4281BD27400126427 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		EE522EE8281EBC8700126427 /* JournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; };
 		EEE8EDB7281784BE009ED204 /* JournalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +139,7 @@
 		EE110997280EA08D00F99B59 /* HealthJournal */ = {
 			isa = PBXGroup;
 			children = (
+				EE522EE3281BD25D00126427 /* Authentication */,
 				EE110998280EA08D00F99B59 /* HealthJournalApp.swift */,
 				EE1109A8280EA6AB00F99B59 /* ViewModels */,
 				EE1109A7280EA0A900F99B59 /* Models */,
@@ -166,6 +171,7 @@
 				EE1109AB280EA97700F99B59 /* JournalView.swift */,
 				EE1109B1280FF70A00F99B59 /* QuoteView.swift */,
 				EE1109BB2816690E00F99B59 /* JournalListView.swift */,
+				EE522EE8281EBC8700126427 /* JournalEntryView.swift */,
 				EE1109BF28166CC600F99B59 /* MainPage.swift */,
 			);
 			path = Views;
@@ -186,6 +192,14 @@
 				EE522EE128193E5E00126427 /* JournalViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EE522EE3281BD25D00126427 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EE522EE4281BD27400126427 /* AuthenticationService.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		EEE8EDB6281782CF009ED204 /* Repositories */ = {
@@ -311,6 +325,8 @@
 				EE1109B0280FF0EF00F99B59 /* LandingPage.swift in Sources */,
 				EE1109BC2816690E00F99B59 /* JournalListView.swift in Sources */,
 				EE110999280EA08D00F99B59 /* HealthJournalApp.swift in Sources */,
+				EE522EE9281EBC8700126427 /* JournalEntryView.swift in Sources */,
+				EE522EE5281BD27400126427 /* AuthenticationService.swift in Sources */,
 				EE1109AC280EA97700F99B59 /* JournalView.swift in Sources */,
 				EE1109AA280EA6C200F99B59 /* Journal.swift in Sources */,
 				EE522EE228193E5E00126427 /* JournalViewModel.swift in Sources */,

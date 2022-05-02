@@ -14,5 +14,5 @@ struct Journal: Identifiable, Codable {
     var question: String
     var answer: String
     var quote: String
-    var userID: String?
+    var userId: String?
 }
