@@ -24,51 +24,63 @@ struct QuoteView: View {
         let quote: String = quotes[indexOne][indexTwo]
         
         NavigationView{
-        VStack(){
-            HStack{
-                Text("Your Quote Of The Day Is:")
-                    .font(.title)
-                    .multilineTextAlignment(.center)
-            }
-            //.padding(.leading, -180)
-            .padding(.bottom, 50)
+            ZStack{
+                Color(red: 253.0/255, green: 228.0/255, blue: 207.0/255).edgesIgnoringSafeArea(.all)
+                VStack(){
+    
+                    Text("Your Quote Of The Day:")
+                        .fontWeight(.heavy)
+                        .font(.system(size: 30, weight: .bold, design: .rounded))
+                        .padding(.top, 55)
+                        .padding(.bottom, 20)
+                    
+                
             
-            RoundedRectangle(cornerRadius: 25)
-                .fill(Color.purple)
-                .frame(width: 300, height: 400)
-                .overlay(
-                    Group{
-                       Text(quote)
-                            .lineSpacing(20)
-                            .font(.system(size: 200))
-                            .padding(.leading, 0)
-                            .padding(.bottom, 200)
-                            .frame(width: 260, height: 360)
-                            .minimumScaleFactor(0.05)
-                            .allowsTightening(true)
-                            //.background(Color.red)
-//                       Text("Saerom")
-//                            .padding(.leading, 100)
-//                            .padding(.bottom, -200)
-                    }
-                )
-            
-            
-            TextField("How does this quote make you feel?", text: $username) // <1>, <2>
-                .padding(.leading, 60)
-                .padding(.top, 60)
-            
-            NavigationLink(destination: JournalListView().onAppear(){
-                addCard(question: journalQ, answer: journalA, quote: quote)
-            }.navigationBarBackButtonHidden(true).navigationBarHidden(true)){
-                Text("Continue")
-            }
-        }
-        .padding(.bottom, 100)
-        .navigationBarBackButtonHidden(true)
-        }
-        
+                    
+                    RoundedRectangle(cornerRadius: 25)
+                        .fill(Color(red: 251.0/255, green: 212.0/255, blue: 179.0/255))
+                        .frame(width: 300, height: 400)
+                        .overlay(
+                            Group{
+                               Text(quote)
+                                    .lineSpacing(10)
+                                    .font(.system(size: 200, design: .rounded))
+                                    .padding(.leading, 0)
+                                    .padding(.bottom, 200)
+                                    .frame(width: 260, height: 360)
+                                    .minimumScaleFactor(0.05)
+                                    .allowsTightening(true)
 
+                            }
+                        )
+                    
+                    RoundedRectangle(cornerRadius: 25)
+                        .fill(Color(red: 251.0/255, green: 212.0/255, blue: 179.0/255))
+                        .frame(width: 300, height: 40)
+                        .overlay(
+                            Group{
+                                TextField("How does this quote make you feel?", text: $username) // <1>, <2>
+                                    .padding(.leading, 15)
+                                    .padding(.top, 0)
+
+                            }
+                        )
+                    
+                    
+                    NavigationLink(destination: JournalListView().onAppear(){
+                        addCard(question: journalQ, answer: journalA, quote: quote)
+                    }.navigationBarBackButtonHidden(true).navigationBarHidden(true)){
+                        Text("Continue")
+                            .fontWeight(.heavy)
+                            .foregroundColor((Color(red: 107.0/255, green: 161.0/255, blue: 237.0/255)))
+                            .padding(.bottom, 20)
+                    }
+                    .padding(.top, 10)
+                }
+                .padding(.bottom, 100)
+                .navigationBarBackButtonHidden(true)
+                }
+            }
     }
     
 private func addCard(question: String, answer: String, quote: String ) {

@@ -12,26 +12,34 @@ struct JournalEntryView: View {
     
     var body: some View {
         NavigationView{
-        VStack{
-            RoundedRectangle(cornerRadius: 25)
-                .fill(Color.blue)
-                .overlay{
-                        VStack{
-                        Text(journalViewModel.journal.question)
-                            .padding(.top, 25)
-                            .font(.title)
-                        Spacer().frame(height: 30)
-                            GeometryReader { proxy in
-                            ScrollView{
-                                Text(journalViewModel.journal.answer).fixedSize(horizontal: false, vertical: false).frame(minWidth: proxy.size.width , minHeight: proxy.size.height - proxy.size.height / 5).multilineTextAlignment(.center)//.background(Color.green)
-                    }
-                    }
+            ZStack{
+                Color(red: 253.0/255, green: 228.0/255, blue: 207.0/255).ignoresSafeArea()
+                VStack{
+                    RoundedRectangle(cornerRadius: 25)
+                        .fill(Color(red: 251.0/255, green: 212.0/255, blue: 179.0/255))
+                        .overlay{
+                                VStack{
+                                Text(journalViewModel.journal.question)
+                                        .multilineTextAlignment(.center)
+                                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                                        .frame(width: 300, height: 100)
+                                        .scaledToFit()
+                                        .minimumScaleFactor(0.01)
+                                        .padding(.top, -10)
+                                Spacer().frame(height: 30)
+                                    GeometryReader { proxy in
+                                    ScrollView{
+                                        Text(journalViewModel.journal.answer).fixedSize(horizontal: false, vertical: false).frame(minWidth: proxy.size.width , minHeight: proxy.size.height - proxy.size.height / 5).multilineTextAlignment(.center)
+                                            
+                            }
+                            }
+                        }
+                            
+                        }
+                        .frame(width: 350, height: 600)
                 }
-                    
-                }
-                .frame(width: 350, height: 600)
-        }
-        .navigationBarHidden(true)
+                .navigationBarHidden(true)
+            }
         
         }
     }

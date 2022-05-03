@@ -16,25 +16,26 @@ struct QuizPage1: View {
     var body: some View {
             NavigationView{
                 ZStack{
-                    Color(red: 245.0/255, green: 241.0/255, blue: 225.0/255)
+                    Color(red: 253.0/255, green: 228.0/255, blue: 207.0/255)
                         .edgesIgnoringSafeArea(.all)
                     VStack{
                         
                         Text("How are You Feeling Today?").fontWeight(.heavy)
-                            .padding(.top, 10)
-                            .font(.system(size: 30))
+                            .font(.system(size: 45, weight: .bold, design: .rounded))
+                            .padding(.top, 75)
+
 
                         List{
                             ForEach(items, id: \.self){ item in
                                 SelectionRow(title:item, selectedItem: $selectedItem)
                             }
-                            .listRowBackground(Color(red: 227.0/255, green: 219.0/255, blue: 186.0/255))
+                            .listRowBackground(Color(red: 251.0/255, green: 212.0/255, blue: 179.0/255))
                         }
                         .onAppear() {
                              UITableView.appearance().backgroundColor = UIColor.clear
                              UITableViewCell.appearance().backgroundColor = UIColor.clear
                         }
-                        .padding(.top, 20)
+                        .padding(.top, 10)
                         .padding(.bottom, 190)
                         Spacer()
                         
@@ -44,7 +45,8 @@ struct QuizPage1: View {
                         if (selectedItem != nil){
                             NavigationLink(destination: QuizPage2(answerOne: selectedItem ?? "None").navigationBarBackButtonHidden(true).navigationBarHidden(true)){
                                 Text("NEXT").fontWeight(.heavy)
-                                    .foregroundColor(Color.red)
+                                    .foregroundColor(Color(red: 107.0/255, green: 161.0/255, blue: 237.0/255))
+                                    .padding(.bottom, 20)
                             }
                         }
                         
@@ -74,24 +76,24 @@ struct QuizPage2 : View {
     var body : some View{
         NavigationView{
             ZStack{
-                Color(red: 245.0/255, green: 241.0/255, blue: 225.0/255)
+                Color(red: 253.0/255, green: 228.0/255, blue: 207.0/255)
                     .edgesIgnoringSafeArea(.all)
                 VStack{
-                    Text("How Do You Want To Feel?").fontWeight(.heavy)
-                        .padding(.top, 10)
-                        .font(.system(size: 30))
+                    Text("  How Do You\n Want To Feel?").fontWeight(.heavy)
+                        .font(.system(size: 45, weight: .bold, design: .rounded))
+                        .padding(.top, 75)
 
                     List{
                         ForEach(items, id: \.self){ item in
                             SelectionRow(title:item, selectedItem: $selectedItem)
                         }
-                        .listRowBackground(Color(red: 227.0/255, green: 219.0/255, blue: 186.0/255))
+                        .listRowBackground(Color(red: 251.0/255, green: 212.0/255, blue: 179.0/255))
                     }
                     .onAppear() {
                          UITableView.appearance().backgroundColor = UIColor.clear
                          UITableViewCell.appearance().backgroundColor = UIColor.clear
                     }
-                    .padding(.top, 20)
+                    .padding(.top, 10)
                     .padding(.bottom, 190)
                     Spacer()
                     
@@ -105,8 +107,10 @@ struct QuizPage2 : View {
 //                                .foregroundColor(Color.red)
 //                        }
                         NavigationLink(destination: JournalView(quizOneAns: answerOne, quizTwoAns: selectedItem ?? "").navigationBarBackButtonHidden(true).navigationBarHidden(true)){
-                            Text("NEXT").fontWeight(.heavy)
-                                .foregroundColor(Color.red)
+                            Text("NEXT")
+                                .fontWeight(.heavy)
+                                .foregroundColor((Color(red: 107.0/255, green: 161.0/255, blue: 237.0/255)))
+                                .padding(.bottom, 20)
                         }
                 
                     }

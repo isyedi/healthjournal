@@ -17,8 +17,9 @@ struct SelectionRow: View {
         HStack{
             if title == selectedItem{
                 Text(title).fontWeight(.heavy)
-                    .foregroundColor(Color(red: 161.0/255, green: 109.0/255, blue: 123.0/255))
-                    .padding(.leading, 20)
+                    .foregroundColor(Color(red: 130.0/255, green: 176.0/255, blue: 241.0/255))
+                    .font(.system(size: 25, weight: .bold, design: .rounded))
+        
                 
             } else {
                 Text(title)

@@ -13,81 +13,45 @@ struct JournalListView: View {
     @ObservedObject var journalListViewModel = JournalListViewModel()
     var body: some View {
         NavigationView{
-        VStack(spacing: 0){
-            
-            HStack(spacing: 0){
-                Text("My Journal")
-                    .fontWeight(.heavy)
-                    .font(.system(size: 30))
-            }
-            .padding(.bottom, 10)
-//            ScrollViewReader{proxy in
-//                ScrollView(.horizontal) {
-//                    HStack(spacing: 20) {
-//                        ForEach(MonthTabs) { Month in
-//
-//                            Text(Month.title)
-//                                .foregroundColor(currentMonth == Month.id ? .black : .gray)
-//                                .font(.system(size: 20))
-//                                .onTapGesture{
-//                                    withAnimation(.easeInOut){
-//                                        currentMonth = Month.id
-//                                        proxy.scrollTo(currentMonth, anchor: .topTrailing)
-//                                    }
-//                                }
-//                        }
-//                    }
-//                }
-//            }
-//            .padding(.top)
-//            .onAppear{
-//                currentMonth = MonthTabs.first?.id ?? ""
-//            }
-//            .padding([.horizontal, .top])
-        
-            ScrollViewReader{proxy in
-                ScrollView(.vertical) {
-                    ForEach(journalListViewModel.journalViewModels){journalViewModel in
-                        JournalEntryButtonView(journalViewModel: journalViewModel)
+            ZStack{
+                Color(red: 253.0/255, green: 228.0/255, blue: 207.0/255).edgesIgnoringSafeArea(.all)
+                VStack(spacing: 0){
+                    
+                    HStack(spacing: 0){
+                        Text("My Journal")
+                            .fontWeight(.heavy)
+                            .font(.system(size: 40))
+                    }
+                    .padding(.top, 30)
+                    .padding(.bottom, 10)
+
+                    ScrollViewReader{proxy in
+                        ScrollView(.vertical) {
+                            ForEach(journalListViewModel.journalViewModels){journalViewModel in
+                                JournalEntryButtonView(journalViewModel: journalViewModel)
+                            }
+                        }
+                    }
+                    .padding([.horizontal, .top])
+                    
+                    
+                    Spacer()
+                    NavigationLink(destination: QuizPage1().navigationBarBackButtonHidden(true).navigationBarHidden(true)){
+                        Text("Make Another Entry")
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color(red: 107.0/255, green: 161.0/255, blue: 237.0/255))
+                            .padding(.bottom, 10)
                     }
                 }
+                .navigationBarBackButtonHidden(true)
+                .navigationBarHidden(true)
+
             }
-            .padding([.horizontal, .top])
             
-            
-            Spacer()
-            NavigationLink(destination: QuizPage1().navigationBarBackButtonHidden(true).navigationBarHidden(true)){
-                Text("Make Another Entry")
-            }
         }
-        .navigationBarBackButtonHidden(true)
-        .navigationBarHidden(true)
-    }
         
     }
 }
-
-//struct CardView: View {
-//    var tab: MonthTab
-//
-//    var body: some View {
-//        VStack {
-//            Text(tab.title + " Entries: ")
-//                .font(.title.bold())
-//                .padding(.vertical)
-//
-//            ForEach(tab.Entries){ Entry in
-//                HStack {
-//                    VStack{
-//                        Text(Entry.title)
-//                            .font(.system(size: 25))
-//                        Text(Entry.text)
-//                    }
-//                }
-//            }
-//        }
-//    }
-//}
 
 struct JournalEntryButtonView: View {
     var journalViewModel: JournalViewModel
@@ -95,10 +59,21 @@ struct JournalEntryButtonView: View {
         NavigationLink(destination: JournalEntryView(journalViewModel: journalViewModel)){
         VStack{
             RoundedRectangle(cornerRadius: 25)
-            .fill(Color.purple)
+            .fill(Color(red: 251.0/255, green: 212.0/255, blue: 179.0/255))
             .frame(width: 350, height: 150)
             .overlay{
+                Text("Prompt:")
+                    .padding(.trailing, 225)
+                    .padding(.bottom, 100)
+                    .font(.system(size: 25, weight: .bold, design: .rounded))
+                    .foregroundColor(.black)
                 Text(journalViewModel.journal.question)
+                    .fontWeight(.heavy)
+                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                    .padding(.top, 20)
+            
+    
+
             }
             }
         }

@@ -35,38 +35,43 @@ struct JournalView: View {
         
         NavigationView{
             ZStack{
+                Color(red: 253.0/255, green: 228.0/255, blue: 207.0/255)
+                    .edgesIgnoringSafeArea(.all)
             VStack{
                 RoundedRectangle(cornerRadius: 40)
-                    .fill(Color.cyan)
+                    .fill(Color(red: 251.0/255, green: 212.0/255, blue: 179.0/255))
                     .frame(width: 350, height: 500)
-                    //.padding(.top, 10)
+                    .padding(.top, 60)
             }
             VStack(spacing: 0){
             Text("Your Journaling Prompt")
                 .multilineTextAlignment(.center)
-                .font(.system(size: 30, weight: .bold, design: .default))
+                .font(.system(size: 45, weight: .bold, design: .rounded))
                 .padding(.top, 20)
             Spacer()
             }
             VStack{
             Text(journalQuestion)
                 .multilineTextAlignment(.center)
-                .font(.system(size: 20, design: .default))
+                .font(.system(size: 20, weight: .bold, design: .rounded))
                 .frame(width: 300, height: 100)
                 .scaledToFit()
                 .minimumScaleFactor(0.01)
-                //.background(Color.red)
-                .padding(.top, 60)
+                .padding(.top, 70)
                 Spacer().frame(height: 25)
             TextEditor(text: $journalAnswer)
                 .font(.body)
-                .foregroundColor(.white)
-                .frame(width: 320, height: 330)
+                .foregroundColor(.black)
+                .frame(width: 320, height: 400)
+                .padding(.top, -25)
+                .padding(.leading, 25)
                 //.background(Color.red)
                 Spacer()
                 NavigationLink(destination: QuoteView(journalA: journalAnswer, journalQ: journalQuestion, indexOne: (quizOneAnswers.firstIndex(of: quizOneAns) ?? 0), indexTwo: (quizTwoAnswers.firstIndex(of: quizTwoAns) ?? 0), journalListViewModel:   JournalListViewModel()).navigationBarBackButtonHidden(true).navigationBarHidden(true)){
                 Text("Save")
-            }.padding(.bottom, 30)
+                        .foregroundColor(Color(red: 107.0/255, green: 161.0/255, blue: 237.0/255))
+                        .fontWeight(.heavy)
+            }.padding(.bottom, 10)
             }.frame(width: 350, height: 670).padding(.top, 70)
             }
             .navigationBarTitle(Text(""), displayMode: .inline)
